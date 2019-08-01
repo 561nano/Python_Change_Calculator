@@ -1,5 +1,3 @@
-# Provide the value you want to use (US currency [common])
-valueList = [100, 50, 20, 10, 5, 1, .25, .10, .05, .01]
 # Provide the count of each value (highest to lowest)
 countOfValue = {100: 1, 50: 10, 20: 10, 10: 10, 5: 10, 1: 10, .25: 10, .10: 1, .05: 10, .01: 10}
 # Provide the change need to return
@@ -7,7 +5,7 @@ changeNeeded = 205.23
 # The list that will give you the change you need to give
 changeBack = []
 
-for i in valueList:
+for i in countOfValue.keys():
     changeCount = changeNeeded / i
 
     if changeCount >= 1 and countOfValue[i] >= int(changeCount):
