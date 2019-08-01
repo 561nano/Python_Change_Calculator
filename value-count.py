@@ -29,5 +29,3 @@ x = i_need_change(countOfValue, changeNeeded)
 print(x["count_of_value"])
 print(x["change_back"])
 print(x["change_needed"])
-
-print(0.1/0.1)
